@@ -1,0 +1,919 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    color: #444444;
+}
+
+/*Global*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.backnew{
+    background:rgba(55, 142, 181, 0.9);
+    margin-top: -20px;
+}
+
+
+/*header*/
+#backpic{
+    background: url(../images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+#backpic::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: max-content;
+    width: 100vh;
+    background-color: #0dcaf0 ;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+header{
+    min-height: 70px;
+    color: white;
+}
+
+header #branding{
+    padding-top: 5px;
+    margin-top: 0;
+    text-transform: uppercase;
+    float: left;
+}
+
+header #branding h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav{
+    float: right;
+    margin-top: 40px;
+}
+
+header .current a{
+    background: lightblue;
+    padding: 10px;
+}
+
+header a:hover{
+    color: blue;
+    background: lightblue;
+    padding: 10px;
+}
+
+/*showcase*/
+#showcase{
+    text-align: center;
+    color: orangered;
+}
+
+#showcase h1{
+    margin-top: 150px ;
+    font-size: 74px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#showcase p{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: -10px;
+}
+
+/*ABOUT*/
+.backneww{
+    background:rgba(55, 142, 181, 0.9);
+    margin-bottom: px;
+    margin-top: -20px;
+}
+
+#about{
+    background: url(../images/about-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 615px;
+}
+
+aside{
+    display: grid;
+    gap: 20px;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "q q q q  q q w w  w w w w"
+    "e e e e  e e r r  r r r r";
+}
+
+aside .q{
+    grid-area: q;
+}
+
+aside .w{
+    grid-area: w;
+}
+
+aside .e{
+    grid-area: e;
+}
+
+aside .r{
+    grid-area: r;
+}
+
+aside#sidebar{
+    float: right;
+    width: 55%;
+    margin-top: 100px;
+}
+
+article#main-col{
+    float: left;
+    width: 40%;
+    margin-top: 50px;
+}
+
+#main-col h1{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+#main-col p{
+    font-size: 18px;
+}
+
+#main-col button{
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+    background: rgba(55, 142, 181, 0.9);
+    border: 0;
+}
+
+#main-col a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+#sidebar h3{
+    font-weight:bolder ;
+    font-size: 23px;
+}
+
+/*services*/
+.services h1{
+    margin-top: 40px;
+    background: url(../images/section-title-bg.png) no-repeat;
+    background-position: center;
+    padding: 18px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.services p{
+    text-align: center;
+    margin-top: -10px;
+}
+
+.float .g{
+    border: rgba(55, 142, 181, 0.9) solid 3px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding: 30px;
+    background: whitesmoke;
+}
+
+.float .s{
+    border: rgba(55, 142, 181, 0.9) solid 3px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding: 30px;
+    background: whitesmoke;
+}
+
+.float .d{
+    border: rgba(55, 142, 181, 0.9) solid 3px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding: 30px;
+    background: whitesmoke;
+}
+
+.float .f{
+    border: rgba(55, 142, 181, 0.9) solid 3px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding: 30px;
+    background: whitesmoke;
+}
+
+/*grid*/
+.float{
+    text-align: left;
+    display: grid;
+    gap: 20px;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "g g g s  s s d d  d f f f"
+    ;
+}
+
+.float .g{
+    grid-area: g;
+}
+
+.float .s{
+    grid-area: s;
+}
+
+.float .d{
+    grid-area: d;
+}
+
+.float .f{
+    grid-area: f;
+}
+
+/*hover*/
+.g:hover{
+    background: rgba(55, 142, 181, 0.9);
+}
+
+.s:hover{
+    background: rgba(55, 142, 181, 0.9);
+}
+
+.d:hover{
+    background: rgba(55, 142, 181, 0.9);
+}
+
+.f:hover{
+    background: rgba(55, 142, 181, 0.9);
+}
+
+/*grid2*/
+#color{
+    width: 100%;
+    background: #f8f9fa;
+    margin-top: 50px;
+}
+.float-2{
+    display: grid;
+    gap: 20px;
+    text-align: left;
+    padding-left: 20px;
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas: 
+    "z z z x  x x c c  c v v v"
+    "z z z x  x x c c  c v v v" ;
+}
+
+.float-2 .z{
+    grid-area: z;
+}
+
+.float-2 .x{
+    grid-area: x;
+}
+
+.float-2 .c{
+    grid-area: c;
+}
+
+.float-2 .v{
+    grid-area: v;
+}
+
+.float-2 h1{
+    font-size: 40px;
+    font-weight: bolder;
+    font-display: block;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.float-2 .highlight{
+    font-weight: 900;
+}
+
+.float-2 p{
+    padding-left: 20px;
+}
+
+/*call action*/
+#callback{
+    margin-top: -20px;
+    text-align: center;
+    background: url(../images/cta-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 45vh;
+    position: relative;
+    z-index: 0;
+}
+
+#callback::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 45vh;
+    width: 100%;
+    background-color: rgba(55, 142, 181, 0.9);
+    opacity: 0.65;
+    z-index: -1;
+}
+
+#call{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    color: white;
+}
+
+#call h1{
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+#call #but{
+    border: solid 2px lightblue ;
+    border-radius: 30px;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+#call a{
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 300;
+    font-size: larger;
+    color: white;
+}
+
+/*PORTFOLIO*/
+#portcent{
+    text-align: center;
+    padding: 10px;
+    background: rgb(199, 227, 236);
+    width: fit-content;
+    margin: auto;
+    border-radius: 30px;
+}
+#portcent li{
+    display: inline;
+    text-decoration:none;
+    text-transform: uppercase;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.portimg img{
+    padding-top: 30px;
+    width: 350px;
+}
+
+.portimg{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/*testimonials*/
+#testimonials1{
+    background: #f8f9fa;
+    text-align: center;
+}
+#testimonials{
+    width: 90%;
+    margin: auto;
+}
+#testimonials img{
+    margin-top: -30px;
+    width: 130px;
+    height: 200px;
+    clip-path: circle();
+}
+
+#testimonials #testbox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+#testbox .testbor{
+    background: white;
+    padding: 40px;
+}
+
+#testbox h3{
+    margin-top: -20px;
+}
+
+#testbox .ceo{
+    margin-top: -20px;
+}
+
+/*TEAM*/
+#team{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+}
+
+.teamword1{
+    background: url(../images/team/team-1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 380px;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.teamword2{
+    background: url(../images/team/team-2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 380px;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.teamword3{
+    background: url(../images/team/team-3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 380px;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.teamcol{
+    border: solid white;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    margin-top: 80%;
+}
+
+.teamcol h3{
+    padding: 0;
+    margin: 5px;
+    font-size: large;
+}
+
+.teamcol p{
+    padding: 0;
+    margin: 5px;
+    font-style: italic;
+    font-size: small;
+}
+
+.teamcol hr{
+    width: 20%;
+    margin: auto;
+}
+
+/*CONTACT*/
+#conback{
+    background: #f8f9fa;
+    height: 130vh;
+    color: #464a50;
+}
+
+.contgrid{
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:  180px 420px;
+}
+
+.contgrid .addres{
+    grid-column: 1/7;
+}
+
+.contgrid .email{
+    grid-column: 7/10;
+}
+
+.contgrid .call{
+    grid-column: 10/13;
+}
+
+.contgrid .conim{
+    grid-column: 1/7;
+}
+
+.contgrid .form{
+    grid-column: 7/13;
+}
+
+.contgrid img{
+    width: 100%;
+    height: 390px;
+}
+
+.addres, .email, .call{
+    text-align: center;
+    background: white;
+    padding-top: 40px;
+}
+
+.form{
+    padding: 30px;
+    background: white;
+}
+
+.form input{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.form .left{
+    float: left;
+    width: 47%;
+}
+
+.form .right{
+    float: right;
+    width: 47%;
+}
+
+.form textarea{
+    height: 200px;
+    width: 100%;
+    font-size: larger;
+}
+
+#button{
+    text-align: center;
+    padding: 10px;
+}
+
+.form button{
+    align-items: center;
+    background:rgba(55, 142, 181, 0.9);
+    padding: 13px;
+    font-size: 15px;
+    color: white;
+    width: 30%;
+    border: 0;
+}
+
+#footer{
+    background: #263f49;
+    margin-top: -20px;
+    color: white;
+    min-height: 500px;
+}
+
+#footgrid{
+   width: 90%;
+   margin: auto;
+}
+
+#footgrid ul li{
+    list-style-type: ">";
+    padding-inline-start: 1ch;
+    line-height: 250%;
+}
+
+#footgrid a{
+    color: white;
+    text-decoration: none;
+}
+
+#footgrid ul{
+    margin-top: -15px;
+}
+
+#footgrid li::marker{
+    color: rgba(55, 142, 181, 0.9);
+    font-weight: bolder;
+    
+}
+
+#foot1{
+    float: left;
+    width: 25%;
+    background: white;
+    color: #263f49;
+    text-align: center;
+    padding: 20px;
+    height: 300px;
+}
+
+#foot1 p{
+    font-size:  95%;
+    font-style: italic;
+}
+
+#foot1 .phone, .copy{
+    font-weight: 900;
+    font-style: normal;
+}
+
+#foot2{
+    float: left;
+    width: 15%;
+    margin-left: 40px;
+    padding-top: 30px;
+}
+
+#foot3{
+    float: left;
+    width: 15%;
+    margin-left: 5%;
+    padding-top: 30px;
+}
+
+#foot4{
+    float: right;
+    width: 30%;
+    padding-top: 30px;
+}
+
+#foot4 input{
+    height: 30px;
+    width: 70%;
+}
+
+#foot4 button{
+    padding: 10px;
+    background: rgba(55, 142, 181, 0.9);
+    color: white;
+    border: 0;
+}
+
+.clear{
+    clear: both;
+    padding-top: 35px;
+}
+
+.final{
+    border-top: solid 1px rgba(55, 142, 181, 0.9);
+    width: 90%;
+    margin: auto;
+}
+
+.final p{
+    text-align: center;
+    font-size: small;
+}
+
+/*MEDIA QUERIES*/
+@media(min-width: 320px) and (max-width: 480px){
+
+    header #branding,
+    header nav,
+    header nav li{
+        float: none;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    header .current a{
+        padding: 8px;
+    }
+
+    header a:hover{
+        padding: 8px;
+    }
+
+    header nav li{
+        padding: 11px;
+        line-height: 50px;
+    }
+
+    header #branding h2{
+        margin-bottom: 5px;
+    }
+
+    #showcase h1{
+        font-size: 30px;
+        margin-top: 70px;
+    }
+
+    #showcase p{
+        padding-top: 20px;
+    }
+
+    .container, #showcase{
+        width: 100%;
+        margin: auto;
+    }
+
+    /*ABOUT*/
+    #about #main-col{
+        float: none;
+        text-align: center;
+        width: 95%;
+        margin: auto;
+    }
+
+    #about #sidebar{
+        float: none;
+        text-align: center;
+        display: block;
+        width: 95%;
+        margin: auto;
+        padding-top: 30px ;
+    }
+
+    /*SERVICES*/
+    .services{
+        width: 90%;
+        margin: auto;
+    }
+
+    .float{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .float-2{
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+
+    .float .g,
+    .float .s,
+    .float .d,
+    .float .f{
+        margin-bottom: 20px;
+        border: 0;
+    }
+
+    #callback{
+        min-height: 430px;
+    }
+
+    #callback::after{
+        min-height: 430px;
+    }
+
+    /*PORTFOLIO*/
+    .portimg img{
+        width: 90%;
+    }
+
+    .portimg{
+       display: block;
+    }
+
+    #testimonials #testbox{
+        display: block;
+    }
+
+    .testbord{
+        border: 1px solid rgba(55, 142, 181, 0.9);
+        border-radius: 10px;
+        padding: 10px;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    /*TEAM*/
+    #team{
+        display: block;
+    }
+
+    .teamword1{
+        width: 90%;
+        padding-top: 10%;
+        margin-bottom: 25%;
+    }
+
+    .teamword2{
+        width: 90%;
+        padding-top: 10%;
+        margin-bottom: 25%;
+    }
+
+    .teamword3{
+        width: 90%;
+        padding-top: 10%;
+        margin-bottom: 25%;
+    }
+
+    .teamcol{
+        margin: auto;
+        margin-top: 90%;
+    }
+
+    /*CONTACT*/
+    #conback{
+        height: auto;
+    }
+
+    .contgrid{
+        display: block;
+    }
+
+    .contgrid .left{
+        float: none;
+        width: 100%;
+    } 
+
+    .contgrid .right{
+        float: none;
+        width: 100%;
+    }
+
+    .form button{
+        width: 50%;
+    }
+
+    #footer{
+        min-height: 150vh;
+        padding-top: 50px;
+    }
+
+    #foot1,
+    #foot2,
+    #foot3,
+    #foot4{
+        float: none;
+        width: 90%;
+        width: auto;
+    }
+
+    #foot1{
+        border-top: #0dcaf0 solid 5px;
+    }
+
+    #foot2{
+        margin-left: 5%;
+    }
+
+    #foot4 input{
+        height: 40px;
+        width: 75%;
+    }
+    
+    #foot4 button{
+        padding: 16px;
+        margin-left: -5px;
+    }
+}
